@@ -49,13 +49,49 @@ export default function Aboutme() {
         </div>
 
         {/* Card 3 */}
-        <div className="p-6 rounded-xl shadow-lg bg-white flex flex-col justify-between min-h-[350px]">
-            <p className="mt-4 text-gray-700 leading-relaxed">
-                 I enjoy creating user-friendly and visually appealing solutions, combining my technical skills with a creative mindset.
-                With hands-on experience in mobile development, I thrive in building responsive and interactive applications.
-            </p>
-           
-        </div>
+        {/* Card 3 */}
+<div className="p-6 rounded-xl shadow-lg bg-white grid grid-cols-4 gap-6 min-h-[350px]">
+  <div className="bg-gray-400 flex flex-col items-center p-4 rounded-lg">
+    <img src="/react.svg" alt="React Logo" className="w-16 mb-2" />
+    <p className="text-lg text-center">React JS</p>
+  </div>
+
+  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
+    <img src="/nextjs.svg" alt="Next JS Logo" className="w-16 mb-2" />
+    <p className="text-center">Next JS</p>
+  </div>
+
+  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
+    <img src="/figma.svg" alt="Figma Logo" className="w-16 mb-2" />
+    <p className="text-center">Figma</p>
+  </div>
+
+  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
+    <img src="/tailwind.svg" alt="Tailwind Logo" className="w-16 mb-2" />
+    <p className="text-center">Tailwind CSS</p>
+  </div>
+
+  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
+    <img src="/firebase.svg" alt="Firebase Logo" className="w-16 mb-2" />
+    <p className="text-center">Firebase</p>
+  </div>
+
+  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
+    <img src="/html.svg" alt="HTML Logo" className="w-16 mb-2" />
+    <p className="text-center">HTML</p>
+  </div>
+
+  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
+    <img src="/taiga.svg" alt="Taiga Logo" className="w-16 mb-2" />
+    <p className="text-center">Taiga</p>
+  </div>
+
+  <div className="bg-[#1a1a1a] flex flex-col items-center p-4 rounded-xl shadow-md w-28 h-44">
+    <img src="/react.svg" alt="React Logo" className="w-12 mb-2" />
+    <p className="text-sm font-semibold text-white text-center">React JS</p>
+  </div>
+</div>
+
         </div>
 
 

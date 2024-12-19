@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="flex items-center justify center min-h-screen overflow-hidden bg-gradient-to-r from-orange-300 ">
       <div className="ml-24 -mt-28 ">
         <p className="font-extralight text-4xl">Hi!</p>
-        <h1 className="font-medium text-5xl mt-3">I'm Hetty</h1>
+        <h1 className="font-medium text-5xl mt-3">I'm Hetty Verina Gustia</h1>
         <p className="font-bold text-5xl mt-3">Software Developer</p>
 
         <div className='flex justify-start gap-x-0.5'>

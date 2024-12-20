@@ -12,10 +12,8 @@ export default function Aboutme() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10 px-6 mx-20">
-        
-
-        {/* Card 2 */}
-        <div className="p-14 rounded-xl shadow-lg bg-white min-h-[350px]">
+        {/* Card 1 */}
+        <div className="p-14 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 ">
             <div className ="flex items-center mb-6">
               <img src="/SIM.png" alt="SIM Logo" className="w-32 mr-4" />
               <div>
@@ -45,52 +43,29 @@ export default function Aboutme() {
                 </div>
               </div>
             </div>
-
         </div>
 
         {/* Card 3 */}
-        {/* Card 3 */}
-<div className="p-6 rounded-xl shadow-lg bg-white grid grid-cols-4 gap-6 min-h-[350px]">
-  <div className="bg-gray-400 flex flex-col items-center p-4 rounded-lg">
-    <img src="/react.svg" alt="React Logo" className="w-16 mb-2" />
-    <p className="text-lg text-center">React JS</p>
-  </div>
-
-  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
-    <img src="/nextjs.svg" alt="Next JS Logo" className="w-16 mb-2" />
-    <p className="text-center">Next JS</p>
-  </div>
-
-  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
-    <img src="/figma.svg" alt="Figma Logo" className="w-16 mb-2" />
-    <p className="text-center">Figma</p>
-  </div>
-
-  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
-    <img src="/tailwind.svg" alt="Tailwind Logo" className="w-16 mb-2" />
-    <p className="text-center">Tailwind CSS</p>
-  </div>
-
-  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
-    <img src="/firebase.svg" alt="Firebase Logo" className="w-16 mb-2" />
-    <p className="text-center">Firebase</p>
-  </div>
-
-  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
-    <img src="/html.svg" alt="HTML Logo" className="w-16 mb-2" />
-    <p className="text-center">HTML</p>
-  </div>
-
-  <div className="bg-orange-400 flex flex-col items-center p-4 rounded-lg">
-    <img src="/taiga.svg" alt="Taiga Logo" className="w-16 mb-2" />
-    <p className="text-center">Taiga</p>
-  </div>
-
-  <div className="bg-[#1a1a1a] flex flex-col items-center p-4 rounded-xl shadow-md w-28 h-44">
-    <img src="/react.svg" alt="React Logo" className="w-12 mb-2" />
-    <p className="text-sm font-semibold text-white text-center">React JS</p>
-  </div>
-</div>
+        <div className="p-6 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+        {[
+          { src: '/react.svg', label: 'React JS', bgColor: 'bg-orange-200' },
+          { src: '/nextjs.svg', label: 'Next JS', bgColor: 'bg-orange-200' },
+          { src: '/figma.svg', label: 'Figma', bgColor: 'bg-orange-200' },
+          { src: '/tailwind.svg', label: 'Tailwind CSS', bgColor: 'bg-orange-200' },
+          { src: '/firebase.svg', label: 'Firebase', bgColor: 'bg-orange-200' },
+          { src: '/html.svg', label: 'HTML', bgColor: 'bg-orange-200' },
+          { src: '/taiga.svg', label: 'Taiga', bgColor: 'bg-orange-200' },
+          { src: '/react.svg', label: 'React JS', bgColor: 'bg-orange-200' },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className={`${item.bgColor} flex flex-col justify-center items-center p-6 rounded-lg shadow-md w-full h-full transform transition-transform hover:scale-105 hover:shadow-2xl`}
+          >
+            <img src={item.src} alt={`${item.label} Logo`} className="w-16 h-16 mb-4" />
+            <p className="text-center text-sm font-semibold">{item.label}</p>
+          </div>
+        ))}
+      </div>
 
         </div>
 

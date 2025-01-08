@@ -31,7 +31,8 @@ export default function Aboutme() {
             </div>
 
             <div className ="flex items-center mt-14">
-              <Image src="/uow_logo.png" alt="UOW Logo" className="w-32 mr-4" />
+              <Image src="/uow_logo.png" alt="UOW Logo" width={128} 
+                height={128}  className="w-32 mr-4" />
               <div>
                 <p className="font-semibold text-gray-900 mb-2 mt-2 text-xl"> Bachelor in Computer Science (Cyber Security)</p>
                 <div className="flex items-center">
@@ -62,7 +63,8 @@ export default function Aboutme() {
             key={index}
             className={`${item.bgColor} flex flex-col justify-center items-center p-6 rounded-lg shadow-md w-full h-full transform transition-transform hover:scale-105 hover:shadow-2xl`}
           >
-            <Image src={item.src} alt={`${item.label} Logo`} className="w-16 h-16 mb-4" />
+            <Image src={item.src} alt={`${item.label} Logo`}  width={64} 
+            height={64}  className="w-16 h-16 mb-4" />
             <p className="text-center text-sm font-semibold">{item.label}</p>
           </div>
         ))}

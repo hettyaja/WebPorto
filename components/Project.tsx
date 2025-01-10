@@ -1,76 +1,51 @@
 import React from 'react';
 import Image from 'next/image';
+import ProjectCard from './ProjectCard';
 
 export default function Projects() {
-  return (
-    <div className="bg-gradient-to-b from-orange-100 to-yellow min-h-screen">
-      {/* Header Section */}
-      <div className="flex justify-center">
-        <h1 className="text-6xl font-medium mt-10 text-gray-800">Projects</h1>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10 px-6 mx-20">
-        {/* Project 1 */}
-        <div className="p-14 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 px-28">
-          <div className="flex items-center mb-6">
-            <Image
-              src="/nextjs.svg"
-              alt="Web Porto Logo"
-              width={128}
-              height={128}
-              className="w-32 mr-4"
-            />
-            <div>
-              <p className="font-semibold text-gray-900 mb-2 mt-2 text-xl">
-                Web Portfolio
-              </p>
-              <p className="text-lg text-gray-600 mb-4">Built using Next.js and Tailwind CSS</p>
+    const projects = [
+        {
+            src: "/nextjs.svg",
+            title: "Web Portofolio",
+            desc :"A website for my personal portofolio",
+            tools : "Next.js, TailwindCSS"
+        },
+        {
+            src: "/nextjs.svg",
+            title: "Glucosense - Final Year Project ",
+            desc :"A website for my personal portofolio",
+            tools : "Node.js, React Native, Firebase"
+        },
+        {
+            src: "/nextjs.svg",
+            title: "Cafe Manegement System",
+            desc :"A website to manage cafe staff schedule",
+            tools : "Java"
+        }
+    ];
+    return (
+        <div className = "bg-gradient-to-b from-orange-100 to-yellow min-h-screen"> 
+            <div className="flex justify-center">
+                <h1 className="text-6xl font-medium mt-10">Project</h1>
             </div>
-          </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+        
+            <ProjectCard
+                title="Web Portofolio"
+                desc="A new experience for customers to submit data."
+                tools="Next.JS, Tailwind CSS"
+                image="/path/to/image1.png"
+                
+                bgColor="#D9F8C4" // Light green
+                
+            />
+           
+            </div>
+
+        
         </div>
 
-        {/* Project 2 */}
-        <div className="p-14 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 px-28">
-          <div className="flex items-center mb-6">
-            <Image
-              src="/react.svg"
-              alt="FYP Logo"
-              width={128}
-              height={128}
-              className="w-32 mr-4"
-            />
-            <div>
-              <p className="font-semibold text-gray-900 mb-2 mt-2 text-xl">
-                Final Year Project
-              </p>
-              <p className="text-lg text-gray-600 mb-4">
-                Built using React Native, Node.js, and Firebase
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Project 3 */}
-        <div className="p-14 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 px-28">
-          <div className="flex items-center mb-6">
-            <Image
-              src="/java-logo.png"
-              alt="Cafe Staff Management Logo"
-              width={128}
-              height={128}
-              className="w-32 mr-4"
-            />
-            <div>
-              <p className="font-semibold text-gray-900 mb-2 mt-2 text-xl">
-                Cafe Staff Management System
-              </p>
-              <p className="text-lg text-gray-600 mb-4">
-                Built using Java with a GUI
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+    )
+        
+    }

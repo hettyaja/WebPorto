@@ -11,7 +11,7 @@ export default function Aboutme() {
         <h1 className="text-6xl font-medium mt-10 text-gray-800">About Me</h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10 px-6 mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 mt-10 px-6 mx-20">
         {/* Card 1 */}
         <div className="p-14 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 px-28 ">
             <div className ="flex items-center mb-6">

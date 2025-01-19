@@ -5,33 +5,41 @@ interface CardProps {
   desc: string;
   tools: string;
   image?: string;
-  
   bgColor: string;
 }
 
 const ProjectCard: React.FC<CardProps> = ({ title, desc, tools, image, bgColor }) => {
   return (
     <div
-      className="shadow-lg rounded-lg p-6"
-      style={{ backgroundColor: bgColor }} // Inline style for dynamic background color
+      className="shadow-lg rounded-3xl p-8 flex flex-col md:flex-row-reverse items-stretch space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse mb-8"
+      style={{ backgroundColor: bgColor }}
     >
-      <div>
-        <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-        <p className="text-gray-600 mt-2">{desc}</p>
-        <p className="text-gray-600 mt-2">{tools}</p>
-      </div>
-      
-      <div>
+      {/* Image Section */}
       {image && (
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-40 object-cover rounded-t-lg mb-4"
-        />
+        <div className="w-full md:w-1/2 lg:w-3/4">
+          <img
+            src={image}
+            alt={title}
+            className="rounded-lg object-contain ml-12"
+            width={600}
+          />
+        </div>
       )}
+
+      {/* Text Section */}
+      <div className="w-full text-left md:w-1/2 flex flex-col justify-between">
+        {/* Title and Description */}
+        <div>
+          <h2 className="text-3xl font-bold text-gray-800">{title}</h2>
+          <p className="text-lg text-gray-600 mt-4">{desc}</p>
+        </div>
+
+        {/* Tools Section (at the bottom) */}
+        <div>
+          <p className="text-gray-500 italic">{tools}</p>
+        </div>
       </div>
     </div>
-    
   );
 };
 

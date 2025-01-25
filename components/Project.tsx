@@ -12,14 +12,14 @@ export default function Projects() {
         {
             src: "/fyp.svg",
             title: "Glucosense - Final Year Project",
-            desc: "A website for my personal portfolio",
+            desc: "A project aimed at improving health management for people with diabetes. It provides personalized insights by tracking glucose levels and calorie intake. Designed to help users make informed dietary choices effortlessly.",
             tools: "Node.js, React Native, Firebase"
         },
         {
-            src: "/project3.png",
+            src: "/csci.png",
             title: "Cafe Management System",
-            desc: "A website to manage cafe staff schedule",
-            tools: "Java"
+            desc: "This Cafe Management System is a PC application designed to assist managers, staff, and owners by providing role-based access tailored to their specific responsibilities.",
+            tools: "Java GUI, MySQL, JDBC"
         }
     ];
 

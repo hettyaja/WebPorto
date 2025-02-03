@@ -10,11 +10,10 @@ export default function Navbar() {
       <Link href="/">
         <p className="text-4xl font-semibold ml-24">Hetty</p>
       </Link>
-      <div className="hidden md:flex space-x-8 h-full gap-12 lg:flex mr-24">
-        <Link href="/about" className="text-lg hover:text-orange-400 font-medium">About</Link>
-        <Link href="/project" className="text-lg hover:text-blue-400 font-medium">Project</Link>
+      <div className="hidden md:flex space-x-8 h-full pr-4 lg:flex mr-24">
+        <Link href="#aboutme" className="text-lg hover:text-orange-400 font-medium">About</Link>
+        <Link href="#project" className="text-lg hover:text-blue-400 font-medium">Project</Link>
         <Link href="/resume" className="text-lg hover:text-blue-400 font-medium">Resume</Link>
-        <Link href="/contact" className="text-lg hover:text-blue-400 font-medium">Contact</Link>
       </div>     
     </nav>
   )

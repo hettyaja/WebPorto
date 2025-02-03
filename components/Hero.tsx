@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="ml-24 -mt-28 ">
         <p className="font-extralight text-4xl">Hi!</p>
         <h1 className="font-medium text-5xl mt-3">I'm Hetty Verina Gustia</h1>
-        <p className="font-bold text-5xl mt-3">Software Developer</p>
+        
 
         <div className='flex justify-start gap-x-0.5'>
           <a href="https://github.com/hettyaja" className='hover:bg-gray-500 px-4 py-2 rounded -ml-5'>
@@ -19,13 +19,13 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="flex justify-between ml-60 ">
+      <div className="flex justify-between ml-80 ">
         <Image
           src="/cat.jpg"
           alt="Rectangle"
           width={382}
           height={500}
-          className='ml-10'
+          // className='ml-10'
         />
       </div>
     </div>

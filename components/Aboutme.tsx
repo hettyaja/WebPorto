@@ -31,18 +31,17 @@ export default function Aboutme() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-orange-100 to-yellow min-h-screen">
-      {/* Header Section */}
+    <div className="bg-gradient-to-b from-orange-100 to-yellow min-h-screen mx-auto">
       <div className="flex justify-center">
         <h1 className="text-6xl font-medium mt-10 text-gray-800">About Me</h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 mt-10 px-8  mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 mt-10 px-8 mx-24">
         {/* Education Section */}
         <div className="p-14 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 px-28">
           {education.map((edu, index) => (
             <div className="flex items-center mb-6" key={index}>
-              <Image src={edu.src} alt={`${edu.title} Logo`} width={128} 
+              <Image src={edu.src} alt={`${edu.title} Logo`} width={128}
                 height={128} className="w-32 mr-16" />
               <div>
                 <p className="font-semibold text-gray-900 mb-2 mt-2 text-xl">{edu.title}</p>
@@ -60,13 +59,16 @@ export default function Aboutme() {
         </div>
 
         {/* Skills Section */}
+        <div className="flex justify-center">
+          <h1 className="text-6xl font-medium mt-10 text-gray-800">About Me</h1>
+        </div>
         <div className="p-6 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {skills.map((item, index) => (
             <div
               key={index}
               className={`${item.bgColor} flex flex-col justify-center items-center p-6 rounded-lg shadow-md w-full h-full transform transition-transform hover:scale-105 hover:shadow-2xl`}
             >
-              <Image src={item.src} alt={`${item.label} Logo`} width={64} 
+              <Image src={item.src} alt={`${item.label} Logo`} width={64}
                 height={64} className="w-16 h-16 mb-4" />
               <p className="text-center text-sm font-semibold">{item.label}</p>
             </div>
@@ -76,3 +78,4 @@ export default function Aboutme() {
     </div>
   );
 }
+

@@ -4,16 +4,16 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between max-container padding-container
-    relative z-30 pt-4 bg-gradient-to-r from-orange-300'>
+    <nav className='flex justify-between w-full padding-container
+    relative z-30 pt-4 bg-gradient-to-r from-orange-300 px-24'>
       {/* Logo part  */}
       <Link href="/">
-        <p className="text-4xl font-semibold ml-24">Hetty</p>
+        <p className="text-4xl font-semibold ">Hetty</p>
       </Link>
-      <div className="hidden md:flex space-x-8 h-full pr-4 lg:flex mr-24">
+      <div className="hidden md:flex space-x-8 lg:flex ">
         <Link href="#aboutme" className="text-lg hover:text-orange-400 font-medium">About</Link>
         <Link href="#project" className="text-lg hover:text-blue-400 font-medium">Project</Link>
-        <Link href="/resume" className="text-lg hover:text-blue-400 font-medium">Resume</Link>
+        <button className="text-lg hover:text-blue-400 font-medium rounded-lg "> View resume</button>
       </div>     
     </nav>
   )

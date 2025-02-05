@@ -29,7 +29,7 @@ export default function Projects() {
                 <h1 className="text-6xl font-medium mt-10">Projects</h1>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 p-6 mx-24">
+            <div className="grid grid-cols-1 gap-8 p-8 mx-24">
                 {projects.map((project, index) => (
                     <div key={index} className="w-full">
                         <ProjectCard

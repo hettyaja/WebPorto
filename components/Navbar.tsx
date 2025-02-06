@@ -13,8 +13,8 @@ export default function Navbar() {
 
       {/* Navbar links */}
       <div className="hidden md:flex items-center space-x-8">
-        <Link href="#aboutme" className="text-lg hover:text-orange-500 font-medium transition-colors duration-300">About</Link>
-        <Link href="#project" className="text-lg hover:text-blue-500 font-medium transition-colors duration-300">Project</Link>
+        <Link href="#aboutme" className="dark:text-white text-lg hover:text-orange-500 font-medium transition-colors duration-300">About</Link>
+        <Link href="#project" className="dark:text-white text-lg hover:text-orange-500 font-medium transition-colors duration-300">Project</Link>
 
         <a 
           href="https://drive.google.com/file/d/1jn_v1QzSPoB_xXprH4XOgoUlfYpiGQPK/view?usp=drive_link" 

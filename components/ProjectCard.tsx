@@ -11,17 +11,19 @@ interface CardProps {
 const ProjectCard: React.FC<CardProps> = ({ title, desc, tools, image, bgColor }) => {
   return (
     <div
-      className="shadow-lg rounded-3xl p-8 flex flex-col md:flex-row-reverse items-stretch space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse mb-8"
+      className="shadow-lg rounded-3xl p-8 flex flex-col md:flex-row-reverse items-stretch 
+      space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse mb-8 transition-transform 
+      hover:scale-105"
+
       style={{ backgroundColor: bgColor }}
     >
       {/* Image Section */}
       {image && (
-        <div className="w-full md:w-1/2 lg:w-3/4">
+        <div className="w-full md:w-1/2 lg:w-3/4 flex justify-center items-center">
           <img
             src={image}
             alt={title}
-            className="rounded-lg object-contain ml-12"
-            width={600}
+            className="rounded-lg object-contain w-full h-auto"
           />
         </div>
       )}

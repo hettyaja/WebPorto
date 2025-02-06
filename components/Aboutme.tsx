@@ -31,27 +31,27 @@ export default function Aboutme() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-orange-100 to-yellow min-h-screen mx-auto">
-      <div className="flex justify-center">
-        <h1 className="text-6xl font-medium mt-10 text-gray-800">About Me</h1>
+    // Aboutme Component
+    <div className="min-h-screen py-16">
+      <div className="flex justify-center -mt-24">
+        <h1 className="text-5xl font-semibold text-gray-800 mb-8">About Me</h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 mt-10 px-8 mx-24">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 px-8 mx-24">
         {/* Education Section */}
-        <div className="p-14 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 px-28">
+        <div className="px-24 py-8 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40">
           {education.map((edu, index) => (
-            <div className="flex items-center mb-6" key={index}>
-              <Image src={edu.src} alt={`${edu.title} Logo`} width={128}
-                height={128} className="w-32 mr-16" />
+            <div className="flex items-center mb-8" key={index}>
+              <Image src={edu.src} alt={`${edu.title} Logo`} width={128} height={128} className="w-32 mr-8" />
               <div>
-                <p className="font-semibold text-gray-900 mb-2 mt-2 text-xl">{edu.title}</p>
+                <p className="font-semibold text-gray-900 mb-2 text-xl">{edu.title}</p>
                 <div className="flex items-center">
-                  <IoTimeOutline className="mr-1 -mt-4" />
-                  <p className="text-lg text-gray-600 mb-4">{edu.date}</p>
+                  <IoTimeOutline className="mr-2" />
+                  <p className="text-lg text-gray-600">{edu.date}</p>
                 </div>
-                <div className="flex items-center -mt-2">
-                  <CiLocationOn className="mr-1 -mt-4" />
-                  <p className="text-lg text-gray-600 mb-4">{edu.location}</p>
+                <div className="flex items-center">
+                  <CiLocationOn className="mr-2" />
+                  <p className="text-lg text-gray-600">{edu.location}</p>
                 </div>
               </div>
             </div>
@@ -60,22 +60,21 @@ export default function Aboutme() {
 
         {/* Skills Section */}
         <div className="flex justify-center">
-          <h1 className="text-6xl font-medium mt-10 text-gray-800">About Me</h1>
+          <h1 className="text-5xl font-semibold text-gray-800 mb-1">Tools and Frameworks</h1>
         </div>
-        <div className="p-6 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="p-8 rounded-xl shadow-lg bg-white backdrop-blur-md border border-white/40 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {skills.map((item, index) => (
             <div
               key={index}
-              className={`${item.bgColor} flex flex-col justify-center items-center p-6 rounded-lg shadow-md w-full h-full transform transition-transform hover:scale-105 hover:shadow-2xl`}
+              className={`${item.bgColor} flex flex-col justify-center items-center p-6 rounded-lg shadow-md transform transition-transform hover:scale-105 hover:shadow-2xl`}
             >
-              <Image src={item.src} alt={`${item.label} Logo`} width={64}
-                height={64} className="w-16 h-16 mb-4" />
+              <Image src={item.src} alt={`${item.label} Logo`} width={64} height={64} className="w-16 h-16 mb-4" />
               <p className="text-center text-sm font-semibold">{item.label}</p>
             </div>
           ))}
         </div>
       </div>
     </div>
-  );
+  )
 }
 

@@ -1,20 +1,30 @@
 import Link from 'next/link';
 import React from 'react';
-
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between w-full padding-container
-    relative z-30 pt-4 bg-gradient-to-r from-orange-300 px-24'>
-      {/* Logo part  */}
+    
+    <nav className="flex items-center justify-between w-full md:px-24 bg-gradient-to-tl from-orange-200 to-orange-100 sticky top-0 z-10">
+      {/* Logo part */}
       <Link href="/">
-        <p className="text-4xl font-semibold ">Hetty</p>
+        <Image src="/het.svg" alt="logo" width={100} height={100}/>
       </Link>
-      <div className="hidden md:flex space-x-8 lg:flex ">
-        <Link href="#aboutme" className="text-lg hover:text-orange-400 font-medium">About</Link>
-        <Link href="#project" className="text-lg hover:text-blue-400 font-medium">Project</Link>
-        <button className="text-lg hover:text-blue-400 font-medium rounded-lg "> View resume</button>
+
+      {/* Navbar links */}
+      <div className="hidden md:flex items-center space-x-8">
+        <Link href="#aboutme" className="text-lg hover:text-orange-500 font-medium transition-colors duration-300">About</Link>
+        <Link href="#project" className="text-lg hover:text-blue-500 font-medium transition-colors duration-300">Project</Link>
+
+        <a 
+          href="https://drive.google.com/file/d/1jn_v1QzSPoB_xXprH4XOgoUlfYpiGQPK/view?usp=drive_link" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-lg font-medium px-6 py-2 border-2 border-blue-500 rounded-3xl hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+        >
+          View Resume
+        </a>
       </div>     
     </nav>
-  )
+  );
 }

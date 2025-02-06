@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer className="bg-gray-900 text-white py-6 text-center">
+      <footer className="bg-gradient-to-r from-orange-200 to-orange-100 text-black py-6 text-center">
         <p className="text-xl font-bold">
           Let’s Connect! ✨ <a href="mailto:hettyverg@gmail.com" className="underline hover:text-gray-400">hettyverg@gmail.com</a>
         </p>

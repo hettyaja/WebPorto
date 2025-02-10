@@ -11,14 +11,14 @@ export default function Hero() {
           <h1 className="font-medium text-5xl md:text-6xl mt-3">{"I'm Hetty Verina Gustia"}</h1>
 
           <div className="flex justify-start gap-x-2 mt-4 -ml-4">
-            <a href="https://github.com/hettyaja" className='hover:bg-gray-500 p-2 rounded'>
+            <a href="https://github.com/hettyaja" target="_blank" rel="noopener noreferrer" className='hover:bg-gray-500 p-2 rounded'>
               <Image src="/github.svg" alt="github" width={50} height={29}/>
             </a>
-            <a href="https://www.linkedin.com/in/hettyverinagustia/" className='hover:bg-gray-500 p-2 rounded'>
+            <a href="https://www.linkedin.com/in/hettyverinagustia/" target="_blank" rel="noopener noreferrer" className='hover:bg-gray-500 p-2 rounded'>
               <Image src="/linkedin.svg" alt="linkedin" width={50} height={29}/>
             </a>
             
-            <a href="mailto:hettyverg@gmail.com" className = "hover:bg-gray-500 p-2 rounded">
+            <a href="mailto:hettyverg@gmail.com" target="_blank" rel="noopener noreferrer" className = "hover:bg-gray-500 p-2 rounded">
               <Image src="/gmail.svg" alt="gmail" width={50} height={29}/>
             </a>
          

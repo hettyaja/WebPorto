@@ -10,9 +10,8 @@
     "export": "next export"
   },
   "dependencies": {
-    "@next/font": "^14.2.15",
     "@tailwindcss/typography": "^0.5.15",
-    "next": "^15.1.5",
+    "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",

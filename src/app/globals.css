@@ -37,7 +37,6 @@ body {
   animation: fade-in 1s ease-out;
 }
 
-/* ✅ Apply Tailwind gradient separately */
 body {
   @apply bg-gradient-to-b from-orange-200 to-orange-50;
 }

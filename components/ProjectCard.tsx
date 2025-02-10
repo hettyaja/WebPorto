@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 interface CardProps {
   title: string;
   desc: string;
@@ -20,11 +20,14 @@ const ProjectCard: React.FC<CardProps> = ({ title, desc, tools, image, bgColor }
       {/* Image Section */}
       {image && (
         <div className="w-full md:w-1/2 lg:w-3/4 flex justify-center items-center">
-          <img
+          <Image
             src={image}
             alt={title}
-            className="rounded-lg object-contain w-full h-auto"
-          />
+            width={600}
+            height={400}
+            className="rounded-lg object-cover"
+            priority
+            />
         </div>
       )}
 

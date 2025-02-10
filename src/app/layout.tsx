@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local"; // Uncommented for local fonts
-import { Inter } from 'next/font/google';
+import { Inter } from 'next/font';
 import Navbar from "../../components/Navbar";
 import './globals.css';
 
@@ -22,6 +22,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Hetty",
   description: "Hetty Portfolio",
+  icons:{
+    icon: "/favicon.ico",
+  }
 };
 
 export default function RootLayout({

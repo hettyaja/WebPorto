@@ -26,7 +26,7 @@ export default function Projects() {
     return (
         <div className=" min-h-screen">
             <div className="flex justify-center">
-                <h1 className="text-5xl font-semibold text-gray-800 mt-1">Projects</h1>
+                <h1 className="text-5xl font-semibold text-gray-800 mt-1 mb-5">Projects</h1>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-1 gap-12 px-8 mx-6 md:mx-24">

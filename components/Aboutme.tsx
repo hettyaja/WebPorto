@@ -37,9 +37,10 @@ export default function Aboutme() {
         <h1 className="text-5xl font-semibold text-gray-800 mb-8">About Me</h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 px-8 mx-24">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 px-8 mx-6 md:mx-24">
+      
         {/* Education Section */}
-        <div className="px-24 py-8 rounded-xl shadow-lg bg-orange-50 backdrop-blur-md border border-white/40">
+        <div className="px-24 md:px-24 py-8 rounded-xl shadow-lg bg-orange-50 backdrop-blur-md border border-white/40">
           {education.map((edu, index) => (
             <div className="flex items-center mb-8" key={index}>
               <Image src={edu.src} alt={`${edu.title} Logo`} width={128} height={128} className="w-32 mr-8" />

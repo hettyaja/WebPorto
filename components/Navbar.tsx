@@ -15,7 +15,6 @@ export default function Navbar() {
       <div className="hidden md:flex items-center space-x-8">
         <Link href="#aboutme" className="dark:text-white text-lg hover:text-orange-500 font-medium transition-colors duration-300">About</Link>
         <Link href="#project" className="dark:text-white text-lg hover:text-orange-500 font-medium transition-colors duration-300">Project</Link>
-
         <a 
           href="https://drive.google.com/file/d/1jn_v1QzSPoB_xXprH4XOgoUlfYpiGQPK/view?usp=drive_link" 
           target="_blank" 
@@ -24,7 +23,10 @@ export default function Navbar() {
         >
           View Resume
         </a>
-      </div>     
+      </div>  
+      <button className="md:hidden p-2">
+        <Image src="/menu.svg" alt="menu" width={30} height={30} />
+      </button>
     </nav>
   );
 }

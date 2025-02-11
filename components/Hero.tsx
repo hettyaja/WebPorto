@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Hero() {
   return (
     <div className="-mt-12">
-      <div className="max-w-screen-xl mx-24 p-8 flex items-center justify-between min-h-screen">
+      <div className="max-w-screen-xl mx-6 md:mx-24 p-8 flex flex-col md:flex-row items-center justify-between min-h-screen">
         {/* Left Content */}
         <div className="animate-fade-in">
           <p className="font-medium text-4xl md:text-5xl">Hi!</p>
